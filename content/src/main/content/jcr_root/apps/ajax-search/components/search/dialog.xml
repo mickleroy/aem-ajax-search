@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="AJAX Search Component"
+    xtype="panel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <endpoint
+            jcr:primaryType="cq:Widget"
+            allowBlank="{Boolean}false"
+            fieldDescription="The servlet endpoint to use to perform the search (i.e. /bin/search)"
+            fieldLabel="Search endpoint"
+            name="./endpoint"
+            xtype="textfield"/>
+        <pagesize
+            jcr:primaryType="cq:Widget"
+            allowDecimals="{Boolean}false"
+            allowNegative="{Boolean}false"
+            fieldDescription="The page size to use for the search results"
+            fieldLabel="Page size"
+            minValue="{Decimal}1"
+            name="./pagesize"
+            xtype="numberfield"/>
+    </items>
+</jcr:root>
