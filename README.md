@@ -13,17 +13,17 @@ abstract class with the path to search, the default page size and the JSON repre
 
 The search query uses the foundation component implementation so the following query parameters can be used:
 | Parameter | Description |
-| --------  | ----------  |
-|q        | the search query |
-|start    | used to navigate the result pages by giving the start index |
-|tag      | constraint results to content that matches given tags |
-|mimeType | constraint results to content with specific mime type |
-|from/to  | constraint results to content last modified within the given "from" and "to" dates |
+| -------- | ---------- |
+| q        | the search query |
+| start    | used to navigate the result pages by giving the start index |
+| tag      | constraint results to content that matches given tags |
+| mimeType | constraint results to content with specific mime type |
+| from/to  | constraint results to content last modified within the given "from" and "to" dates |
 
 Additionally, the following parameter has been implemented to override the page size:
 | Parameter | Description |
-| --------  | ----------  |
-|pageSize | defines the page size to use (custom) |
+| -------- | ---------- |
+| pageSize | defines the page size to use (custom) |
 
 Example requests:
 ```
