@@ -12,6 +12,7 @@ functionality and some display logic, whilst the sample implementation `GeoSiteS
 abstract class with the path to search, the default page size and the JSON representation of a search hit.
 
 The search query uses the foundation component implementation so the following query parameters can be used:
+
 | Parameter | Description |
 | -------- | ---------- |
 | q        | the search query |
@@ -21,9 +22,10 @@ The search query uses the foundation component implementation so the following q
 | from/to  | constraint results to content last modified within the given "from" and "to" dates |
 
 Additionally, the following parameter has been implemented to override the page size:
-| Parameter | Description |
-| -------- | ---------- |
-| pageSize | defines the page size to use (custom) |
+
+Parameter | Description
+--------- | ----------
+pageSize | defines the page size to use (custom)
 
 Example requests:
 ```
