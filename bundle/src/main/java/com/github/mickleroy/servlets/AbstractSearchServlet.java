@@ -94,7 +94,7 @@ public abstract class AbstractSearchServlet extends SlingSafeMethodsServlet {
                 pageSize = Long.valueOf(request.getParameter(PARAM_PAGE_SIZE));
             }
             
-            Search search = new Search(request);
+            Search search = getSearch(request);
             search.setSearchIn(getSearchPath());
             search.setHitsPerPage(pageSize);
             Search.Result result = search.getResult();
@@ -165,4 +165,11 @@ public abstract class AbstractSearchServlet extends SlingSafeMethodsServlet {
             }
         }
     }
+    
+    /**
+     * For testing purposes only.
+     */
+    protected Search getSearch(SlingHttpServletRequest request) {
+        return new Search(request);
+    } 
 }
